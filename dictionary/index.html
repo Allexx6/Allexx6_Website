@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/normalize.min.css">
+   <link rel="stylesheet" href="css/modal_form.css">
+   <link rel="stylesheet" href="css/table.css">
+   <link rel="stylesheet" href="css/scrollBar_styles.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Словарик</title>
+</head>
+
+<body>
+   <header>
+      <h1 class="h1">Англо-Русский словарик </h1>
+      <button type="button" id="langBtn" class="button">Русско-Английский</button>
+   </header>
+
+
+   <div class="main">
+
+      <div class="tabs"> <!-- панель с буквами алфавитов -->
+         <ul class="tabs-items">
+            <!-- здесь js добавляет li с классом liItem в количестве букв алфавита -->
+         </ul>
+      </div>
+
+      <table class="table">
+         <thead>
+            <tr>
+               <th>Слово</th>
+               <th>Перевод</th>
+            </tr>
+         </thead>
+         <tbody class="tbody">
+            <!-- здесь js добавляет строки tr в зависимости от кол-ва слов в файле -->
+         </tbody>
+      </table>
+      <footer>
+
+         <div class="footer-items">
+            <button type="button" class="button" id="showModalBtn">Добавить слово</button>
+            <button type="button" class="button" id="changeBtn" disabled>Исправить слово</button>
+            <button type="button" class="button" id="delBtn" disabled>Удалить слово</button>
+         </div>
+
+         <!-- модальное окно добавления слова  -->
+         <div class="add-word-modal-form">
+            <div class="modal-content">
+
+               <h2>Введите новое слово и его перевод</h2>
+
+               <div class="add-word">
+
+                  <div class="add-word-items">
+                     <div class="new-word">
+                        <label>
+                           Новое слово:<br>
+                           <input type="text" class="newWord" name="newWord" />
+                        </label>
+                     </div>
+                     <div class="word-meaning">
+                        <label>
+                           Перевод:<br>
+                           <input type="text" class="translation" name="translation" />
+                        </label>
+                     </div>
+                  </div>
+
+                  <div class="add-word-items">
+                     <button type="button" class="button add-button">Добавить слово</button>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+         <!-- модальное окно исправления слова  -->
+         <div class="change-word-modal-form">
+            <div class="modal-content">
+
+               <h2>Исправьте слово или его перевод</h2>
+
+               <div class="add-word">
+
+                  <div class="add-word-items">
+                     <div class="new-word">
+                        <label>
+                           Cлово:<br>
+                           <input type="text" class="newWord2" name="newWord" />
+                        </label>
+                     </div>
+                     <div class="word-meaning">
+                        <label>
+                           Перевод:<br>
+                           <input type="text" class="translation2" name="translation" />
+                        </label>
+                     </div>
+                  </div>
+
+                  <div class="add-word-items">
+                     <button type="button" class="button add-button2">Сохранить</button>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+         <!-- модальное окно удаления  слова  -->
+         <div class="delete-word-modal-form">
+            <div class="modal-content">
+
+               <h2>Вы точно хотите удалить слово?</h2>
+
+               <div class="add-word">
+
+                  <div class="add-word-items">
+                     <div class="new-word">
+                        <label>
+                           Cлово:<br>
+                           <input type="text" class="newWord3" name="newWord" />
+                        </label>
+                     </div>
+                     <div class="word-meaning">
+                        <label>
+                           Перевод:<br>
+                           <input type="text" class="translation3" name="translation" />
+                        </label>
+                     </div>
+                  </div>
+
+                  <div class="add-word-items">
+                     <button type="button" class="button delete-button">Удалить</button>
+                     <button type="button" class="button cancel-button">Отмена</button>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+      </footer>
+   </div>
+
+
+   <script src="js/functions.js"></script>
+   <script src="js/modalForm.js"></script>
+   <script src="js/modalForm2.js"></script>
+   <script src="js/modalForm3.js"></script>
+   <script src="js/variables.js"></script>
+   <script src="js/js.js"></script>
+</body>
+
+</html>

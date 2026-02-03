@@ -1,0 +1,97 @@
+html,
+body {
+  margin: 0;
+  font-family: "Quartal W10 Bold";
+  font-stretch: ultra-expanded;
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: "Quartal W10 Bold";
+  src: url("../fonts/Quartal W10 Bold.ttf") format("truetype");
+}
+
+.container {
+  background-color: rgb(231, 231, 231);
+}
+
+.col-md-12 {
+  padding: 10px;
+}
+
+h2 {
+  color: rgb(81, 83, 81);
+}
+
+.card {
+  background-color: rgb(242, 242, 242);
+  /* margin: 10px; */
+}
+
+.card-title {
+  color: rgb(217, 255, 215);
+  text-shadow: 1px 1px 0 rgb(78, 78, 78), 1px -1px 0 rgb(78, 78, 78),
+    -1px 1px 0 rgb(78, 78, 78), -1px -1px 0 rgb(78, 78, 78);
+}
+
+.accordion-body {
+  padding: 0 10px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("/fonts/arrow-down.svg");
+}
+
+.accordion-button::after {
+  width: 14px;
+  height: 14px;
+  background-size: 14px;
+  background-image: url("/fonts/arrow-down.svg");
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffe7cf;
+  /* box-shadow: none; */
+}
+
+.accordion-button {
+  padding: 5px 15px;
+  color: #ed2a95;
+  background-color: #ffe7cf;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-item {
+  background-color: #fbfffa;
+  border: var(--bs-accordion-border-width) solid
+    var(--bs-accordion-border-color);
+  text-shadow: 1px 1px 0 rgb(138, 90, 0), 1px -1px 0 rgb(138, 90, 0),
+    -1px 1px 0 orange, -1px -1px 0 orange;
+  color: white;
+  font-size: 1rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  line-height: 1.2em;
+  display: block;
+  margin: 10px;
+  color: rgb(216, 253, 253);
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 1px 1px 0 rgb(129, 129, 129), 1px -1px 0 rgb(161, 166, 230),
+    -1px 1px 0 rgb(0, 17, 255), -1px -1px 0 rgb(47, 0, 255);
+}

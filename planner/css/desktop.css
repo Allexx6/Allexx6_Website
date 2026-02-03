@@ -1,0 +1,239 @@
+body {
+  font-family: "Asap", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
+h5 {
+  margin-top: -20px;
+}
+
+@media (min-width: 1400px) {
+  .my_container {
+    width: 80%;
+    max-width: 1300px;
+  }
+  .open-modal {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  /* .header-ul li  {
+    width: 10%;
+  } */
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .my_container {
+    width: 90%;
+  }
+  .open-modal {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  /* .header-ul li {
+    width: 10%;
+  } */
+}
+
+@media screen and (max-width: 1199px) {
+  .my_container {
+    width: 95%;
+  }
+  .open-modal {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -130%);
+  }
+  /* .header-ul li {
+    width: 65px;
+  } */
+}
+
+.my_container {
+  background-color: rgb(249, 249, 249);
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.open-modal {
+  background-color: rgb(163, 205, 160);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-bottom: -10px 10px;
+  padding: 10px 25px;
+  color: #f4f4f4;
+  text-decoration: none;
+  border: 1px solid rgb(146, 148, 248);
+  border-radius: 5px;
+  overflow: hidden;
+  text-shadow: 1px 1px 0 rgb(51, 49, 44), 1px -1px 0 rgb(51, 49, 44),
+    -1px 1px 0 rgb(51, 49, 44), -1px -1px 0 rgb(51, 49, 44);
+}
+
+.open-modal:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.open-modal:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(146, 148, 248, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.open-modal:hover:before {
+  left: 100%;
+}
+
+.disabled {
+  display: none;
+}
+
+.decor {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(240, 240, 240);
+}
+
+header {
+  margin: 5px 0 5px auto;
+}
+
+.header-ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 15px 5px;
+  overflow-x: auto;
+}
+
+.header-ul li {
+  padding: 5px 10px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.aside-right {
+  width: 80px;
+}
+
+.aside-ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  font-size: 17px;
+}
+
+.aside-ul > li {
+  margin: 5px;
+  border-radius: 5px;
+}
+
+li {
+  text-align: center;
+  text-shadow: 1px 1px 0 orange, 1px -1px 0 orange, -1px 1px 0 orange,
+    -1px -1px 0 orange;
+  color: white;
+  padding: 5px 0;
+}
+
+.selectable:hover {
+  cursor: pointer;
+  color: rgb(132, 132, 215);
+  text-shadow: 1px 1px 0 rgb(170, 255, 0), 1px -1px 0 rgb(170, 255, 0),
+    -1px 1px 0 rgb(170, 255, 0), -1px -1px 0 rgb(170, 255, 0);
+}
+
+li.checked {
+  color: rgb(174, 71, 188);
+  text-decoration: underline;
+}
+
+.main-info {
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 3px 5px;
+  border: 2px solid rgb(217, 118, 69);
+  border-radius: 5px;
+  width: 98%;
+  margin: 5px auto;
+  padding: 10px;
+}
+
+thead {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.first-col {
+  width: 50px;
+}
+
+td {
+  text-align: center;
+}
+
+textarea {
+  height: 35px;
+  width: 95%;
+  margin: 3px auto;
+  resize: vertical;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  min-height: 20px;
+  border: 2px solid green;
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid rgb(0, 64, 255);
+  box-shadow: 0 0 10px #719ece;
+}
+
+.save-button {
+  margin: 10px auto 0 auto;
+  background-color: rgb(163, 205, 160);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 10px 25px;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid rgb(146, 148, 248);
+  border-radius: 5px;
+  /* display: none; */
+}
+
+.save-button:hover {
+  box-shadow: 1px 1px 5px 5px rgba(146, 148, 248, 0.3);
+  text-shadow: 1px 1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0);
+  background-color: rgb(63, 236, 63);
+}

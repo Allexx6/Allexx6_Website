@@ -1,0 +1,52 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+.my-container {
+  width: 90%;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: rgb(226, 245, 225);
+  box-shadow: 5px 1px 15px inset rgb(193, 192, 211);
+  border-radius: 5px;
+  white-space: pre;
+}
+
+.main {
+  padding: 5px;
+  width: 90%;
+  max-width: 250px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 5px;
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 100%;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #1ecd97;
+  color: #1ecd97;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  color: white;
+  background: #1ecd97;
+}
+
+button:active {
+  letter-spacing: 2px;
+}

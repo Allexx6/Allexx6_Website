@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Neucha-Regular";
+  src: url("../fonts/Neucha-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Neucha-Regular";
+}
+
+header {
+  position: relative;
+  display: flex;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button {
+  min-width: 100px;
+  border: 0;
+  border-radius: 5px;
+  background: #4676d7;
+  color: #fff;
+  padding: 3px 15px 0 15px;
+  min-height: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 0 3px #cbd6ee;
+}
+.button:hover {
+  background: #1d49aa;
+}
+
+h1 {
+  display: block;
+  margin: 5px auto;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: coral;
+}
+
+.main {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 200px;
+  background-color: azure;
+  box-shadow: 5px 5px 15px inset lightgrey;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.tabs {
+  width: 98%;
+  margin: 0 auto;
+  color: white;
+  box-shadow: #8a8a8a -1px -1px 0, #858585 1px 1px 0, #858585 -1px 1px 0,
+    #858585 1px -1px 0;
+  border-radius: 2px;
+}
+.tabs-items {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  overflow-x: auto;
+}
+.liItem {
+  padding: 5px 10px;
+  margin: 3px 0;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 0px -1px 0 #000, 1px -1px 0 #000,
+    1px 0px 0 #000, 1px 1px 0 #000, 0px 1px 0 #000, -1px 1px 0 #000,
+    -1px 0px 0 #000;
+  border-radius: 50%;
+}
+.liItem:hover {
+  color: rgb(255, 255, 255);
+  background-color: #ececec;
+  box-shadow: -1px -1px 0 #bbbbbb, -1px 1px 0 #bbbbbb, 1px 1px 0 #797979,
+    1px -1px 0 #797979;
+  /* box-shadow: -1px -1px 0 #7a7a7a, 0px -1px 0 #797979, 1px -1px 0 #7a7a7a,
+    1px 0px 0 #797979, 1px 1px 0 #797979, 0px 1px 0 #7a7a7a, -1px 1px 0 #797979,
+    -1px 0px 0 #7a7a7a; */
+}
+
+footer {
+  /* position: absolute;
+  bottom: 5px; */
+  width: 100%;
+}
+.footer-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer-items button {
+  margin-bottom: 8px;
+}

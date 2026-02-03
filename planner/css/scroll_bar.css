@@ -1,0 +1,24 @@
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+  background: orange;
+}
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+  background-color: rgb(117, 117, 255);
+  border-radius: 4px;
+  border: 2px solid orange;
+}
+
+.header-ul::-webkit-scrollbar-track {
+  background-color: rgb(222, 252, 252);
+}
+
+.header-ul::-webkit-scrollbar-thumb {
+  background: orange;
+  background: linear-gradient(90deg, #8173ff);
+}

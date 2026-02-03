@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "npm": "^11.8.0"
+  },
+  "name": "allexx6_website",
+  "version": "1.0.0",
+  "description": "Это мой первый репозиторий на GitHub",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allexx6/Allexx6_Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Allexx6/Allexx6_Website/issues"
+  },
+  "homepage": "https://github.com/Allexx6/Allexx6_Website#readme"
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>php Новый ежедневник</title>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/modal_form_styles.css">
+   <link rel="stylesheet" href="css/scroll_bar.css">
+   <link rel="stylesheet" href="css/desktop.css">
+</head>
+
+<body>
+   <h1>Ежедневник</h1>
+   <h5 id="h5"></h5>
+   <h4 id="h4">(вход не выполнен)</h4>
+
+   <!-- Кнопка для открытия модальной формы входа -->
+   <button class="open-modal">Вход (регистрация)</button>
+   <!-- id="openModalBtn" -->
+
+   <!-- Модальное окно -->
+   <div class="overlay" id="overlay">
+      <div class="login animate" id="loginForm">
+
+         <div class="close_cross" id="closeModalCross">&times;</div>
+         <input type="text" placeholder="Логин пользователя" name="user_name" id="userNameInp" autocomplete="off"
+            required>
+         <input type="tel" placeholder="Номер телефона +7(###)###-##-##" name="user_tel" id="userTelInp" required>
+         <button type="submit" id="submitBtn" class="submit_btn">Вход</button>
+
+      </div>
+   </div>
+
+   <!-- Модальное окно запрета входа -->
+   <div class="overlay" id="overlayTwo" onclick="closeModalTwo()">
+      <div class="login animate" id="false_login_form">
+
+         <label>Пользователь с таким номером уже зарегистрирован.</label><br>
+         <label>Введите правильный логин!</label>
+         <!-- <button class="submit_btn" id="closeBtn">OK</button> -->
+      </div>
+   </div>
+
+   <!-- Главное окно -->
+   <div class="my_container" id="myContainer">
+      <!-- Создаем header  =  9 месяцев и год -->
+      <header class="decor">
+         <ul class="header-ul">
+            <li>месяц</li>
+            <li>месяц</li>
+            <li>месяц</li>
+            <li>месяц</li>
+            <li>месяц</li>
+            <li>месяц</li>
+            <li>месяц</li>
+            <li>месяц</li>
+            <li>месяц</li>
+            <li>месяц</li>
+            <li>месяц</li>
+            <li>месяц</li>
+         </ul>
+      </header>
+
+      <div class="wrapper">
+
+         <aside id="asideRight" class="decor aside-right">
+            <ul class="aside-ul" id="asideUl">
+               <li>День месяца</li>
+            </ul>
+         </aside>
+
+         <main class="decor main-info">
+            <table id="table">
+               <thead>
+                  <th>Час</th>
+                  <th class="th-plan">Планируемые мероприятия </th>
+               </thead>
+               <col class="first-col">
+               <col class="second-col">
+            </table>
+         </main>
+
+      </div>
+
+      <button class="save-button" id="saveBtn" onclick="saveInfo(monthInfo)"> Сохранить </button>
+
+   </div>
+
+
+   <script src="js/imask.js"></script>
+   <script src="js/js.js?v=1"></script>
+   <script src="js/modal_form.js?v=1"></script>
+
+
+</body>
+
+</html>

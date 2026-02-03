@@ -1,0 +1,91 @@
+.add-word-modal-form {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.change-word-modal-form {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.delete-word-modal-form {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-active {
+  display: block;
+}
+
+.modal-content {
+  background-color: white;
+  width: 50%;
+  /* padding: 1rem; */
+  border: 1px solid #ac3636;
+  border-radius: 5px;
+  margin: 15% auto 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6;
+  /* для анимации */
+  position: relative;
+  animation-name: animatetop;
+  animation-duration: 0.5s;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.add-word-items {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.add-word-items input {
+  border: 2px solid rgb(162, 255, 99);
+  border-radius: 5px;
+  width: 100%;
+  padding: 0 10px;
+  height: 30px;
+  margin-top: 5px;
+}
+.add-word-items input:focus {
+  outline: none;
+  border: 2px solid rgb(107, 211, 37);
+}
+.add-word-items label {
+  margin-left: 5px;
+}
+.new-word {
+  width: 30%;
+}
+.word-meaning {
+  width: 65%;
+}
